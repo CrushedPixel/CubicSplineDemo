@@ -11,6 +11,7 @@ public class Main {
 		JFrame frame = new JFrame();
 		frame.setSize(800, 800);
 		frame.setResizable(false);
+		frame.setTitle("Cubic Spline Demo");
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		
