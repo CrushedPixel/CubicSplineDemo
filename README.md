@@ -9,3 +9,5 @@ To remove a Point, right click it.
 
 ##Download
 An up-to-date .jar distribution (compiled with Java 7) is provided in the /dist folder of this repository.
+
+![Screenshot](screenshot.jpg)
