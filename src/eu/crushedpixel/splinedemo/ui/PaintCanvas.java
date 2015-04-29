@@ -4,6 +4,8 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Point;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
@@ -91,6 +93,19 @@ public class PaintCanvas extends DoubleBuffer {
 					PaintCanvas.this.paint(PaintCanvas.this.getGraphics());
 				}
 			}
+		});
+		
+		this.addKeyListener(new KeyAdapter() {
+
+			@Override
+			public void keyTyped(KeyEvent e) {
+				if(e.getKeyChar() == 'c') {
+					points = new ArrayList<>();
+					recalcSpline();
+					PaintCanvas.this.paint(PaintCanvas.this.getGraphics());
+				}
+			}
+			
 		});
 	}
 
